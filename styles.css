@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    min-height: 100px;
+    background-color: green;
+    padding: 20px;
+    font-size: 1em;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.nav {
+    width: 25%;
+    background-color: blue;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.main-wrapper {
+    width: 75%;
+    background-color: red;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.box-wrapper {
+    display: flex;
+}
+
+.box {
+    width: 33.3%;
+    min-height: 200px;
+    background-color: yellow;
+    padding: 20px;
+    color: blue;
+    margin-right: 20px;
+}
+
+.box:last-child {
+    margin-right: 0px;
+}
+
+.advertisement {
+    display: block;
+    width: 100%;
+    background-color: purple;
+    min-height: 100px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+
+    .box-wrapper {
+        display: block;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-wrapper {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 991px) {
+    .nav {
+        display: none;
+    }
+
+    .main-wrapper {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .box {
+        display: inline;
+    }
+}
